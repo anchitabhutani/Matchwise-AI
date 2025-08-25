@@ -12,7 +12,7 @@ const Header = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("token"));
   const [role, setRole] = useState(localStorage.getItem("role"));
   const [menuOpen, setMenuOpen] = useState(false);
-  const [googleUser, setGoogleUser] = useState<User | null>(null);
+  const [_googleUser, setGoogleUser] = useState<User | null>(null);
 
   useEffect(() => {
     const handleStorageChange = () => {
